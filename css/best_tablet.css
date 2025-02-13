@@ -1,0 +1,88 @@
+#header {min-width: auto}
+#header .gnb {display: none;}
+.lnb_bg {display: none;}
+
+#visual_main {min-width: auto;}
+
+
+
+#section1 {min-width: auto; height: auto; }
+#section2 {min-width: auto; height: auto; padding-bottom: 60px;}
+#section3 {min-width: auto; height: 580px; box-sizing: border-box; background: #ffffff url('../images/bg_section3.jpg') center no-repeat;}
+#section4 {min-width: auto; height: 470px; }
+#section5 {min-width: auto; height: 600px; }
+#footer {min-width: auto; height: 233px; }
+
+#section1 > div {width:100%; height: auto;}
+#section1 > div > a {width:24%; margin: 0 0.2%;}
+#section1 > div > a > ul {width:100%; height: auto; padding-bottom: 10px;}
+#section1 > div > a > ul li.exp {width:auto; padding: 0 4px; height: auto; word-break: keep-all;}
+
+
+#section2 > div {width: auto; }
+/* #section2 > div:after {content: ""; display: block; clear: both;} */
+#section2 .content {text-align: center;}
+#section2 .content ul {width:44%; float: none; display: inline-block; margin: 0 7px;}
+#section2 .content ul:last-child {margin-right: 7px;}
+
+
+
+#section3 > div {width:auto;}
+#section3 > div h1 {position: relative; top:30px; transform: translate(-50%,0);}
+#section3 > div a:nth-of-type(1),
+#section3 > div a:nth-of-type(2),
+#section3 > div a:nth-of-type(3) {margin-left: 5%; margin-top: 100px;}
+#section3 > div a:nth-of-type(4),
+#section3 > div a:nth-of-type(5),
+#section3 > div a:nth-of-type(6) {margin-right: 5%; margin-top: 100px;}
+
+
+#section4 > div {width: auto; }
+#section4 > div .info {width:24%}
+#section4 > div .health {width:76%}
+
+#section4 .info .phone {width: auto;}
+#section4 .info .phone p.callnum {font-size: 24px; letter-spacing: -1px;}
+#section4 .info .time {width: auto;}
+#section4 .info .time table {margin: 15px 10px; word-break: keep-all;}
+#section4 .info .time table tr td {text-indent: 0; padding-left: 10px;}
+
+#section4 .health .video_box {width: auto;}
+#section4 .health .video_box ul {width: 31.5%; height: auto; margin-right: 10px; }
+#section4 .health .video_box ul li.movie {width: 100%; height: auto; }
+#section4 .health .video_box ul li.movie img {width: 100%;}
+
+
+
+
+
+/*subpage*/
+#visual_sub {min-width: auto;}
+#visual_sub .text_box {width: 100%;}
+
+.snb_box {width: 80%; }
+.snb_box ul li a {padding: 0 2vw;}
+
+
+.contents_box {width: 90%; margin: 0 auto;}
+.contents_box h3 {width: 50%;}
+
+.greeting .ceo {width: 30%; height: auto; margin-left: 0;}
+.greeting .ceo img {width: 100%;}
+.greeting .article {width: 70%; margin-left: 0; text-align: justify;}
+
+
+/* 
+.contents_box {width: 1200px; margin: 0 auto; padding-bottom: 100px;}
+.contents_box:after {content: ""; display: block; clear: both;;}
+.contents_box h3 {width: 640px; height: 100px; font-size: 36px; line-height: 60px; text-align: center; border-bottom: 1px solid #8fc43d; margin: 50px auto 70px auto; font-weight: normal;}
+.contents_box h3 span {display: block; font-size: 18px; color: #777; line-height: 20px;}
+
+.greeting .ceo {width: 385px; height: 425px; float: left; margin-left: 50px;}
+.greeting .article {width: 680px; height: auto; float: left; margin-left: 34px;} */
+
+
+
+
+
+

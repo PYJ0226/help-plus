@@ -1,0 +1,161 @@
+.pc {display: none;}
+.mo {display: block;}
+
+#header {height: 45px; background: rgba(0,27,59,0.4);}
+#header h1 {width: 160px; height: 80px; margin: 0 auto; float: none;}
+#header h1 img {width: 100%; margin-top: 0;}
+
+#header .hambuger {position: absolute; left: 0; top:3px; margin-top: 0; margin-right: 0; width: 45px; height: 45px; }
+#header .hambuger span {left: 10px;}
+#header .hambuger span:nth-child(1) {top: 8px;}
+#header .hambuger span:nth-child(2) {width: 22px; top: 18px;}
+#header .hambuger span:nth-child(3) {top: 28px;}
+
+#header .phone {position: absolute; width: 45px; height: 45px; right: 0; top:0px; text-align: center; line-height: 45px; font-size: 22px; }
+#header .phone i {color: #fff;}
+
+
+
+
+
+.sidemenu {overflow: auto; }
+.sidemenu .btn_close {top: 10px; width: 50px; }
+.gnb2 {width: 100%; min-width: auto; top:120px; font-size: 0; padding-bottom: 200px; }
+
+.hidden_menu > li {font-size: 20px; width: 30%; height: 280px; line-height: 1em; }
+
+.hidden_menu > li .lnb2 {padding-top: 20px;}
+.hidden_menu > li .lnb2 li {font-size: 15px; height: 40px; line-height: 1em;}
+
+.member_box {top:700px}
+.member_box a {width: 45%;}
+
+
+
+
+
+
+
+#visual_main .text_box {position: absolute; top: 190px; left:50%; transform: translateX(-50%); text-align: center;}
+#visual_main .building {background: url('../images/visual_building.png') center bottom -200px no-repeat; }
+#visual_main .text_box strong {font-size: 9vw; line-height: 1.1em;}
+#visual_main .text_box p {font-size: 5vw;}
+
+
+#section1 > div > a {width:46%; margin: 0 0.2% 7px 0;}
+
+#section2 > div h2 {
+    width: 100%;
+    height: 100px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#section2 > div h2 span{
+    width: 100%;
+    height: 100px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+#section5 > h2 {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 22px;
+}
+
+#section5 > h2 span{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#section2 h2 span {word-break: keep-all;}
+#section2 .content ul {width:92%; height: auto; min-height: 200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+#section2 .content ul li.icon {position: relative; float: left; left: 0; margin-right: 10px;}
+#section2 .content ul li.tit {width: calc(100% - 52px - 30px); float: left; text-align: left; margin-top: 40px; margin-left: 0px;}
+#section2 .content ul li.exp {width: auto; text-align: left; padding-bottom: 35px;}
+
+
+#section3 {height: 640px;}
+#section3 > div a {width: 44%; height: auto; min-height: 100px; }
+#section3 > div a li.icon {width: 100%; float: none; margin: 10px auto; text-align: center;}
+#section3 > div a li.tit {width: 100%; text-align: center; float: none; margin: 0;}
+#section3 > div a li.exp {width: 100%; float: none; text-align: center; margin: 0; padding: 0 20px; box-sizing: border-box; height: auto; display: none; }
+
+
+
+
+
+#section4 {height: auto;}
+#section4 > div {width: auto; height: auto; }
+#section4 > div .info {width:90%; height: auto; margin: 0 auto; float: none;}
+#section4 > div .health {width:100%; height: auto; float: none; box-shadow: none;}
+
+#section4 .info .phone {width: auto;}
+#section4 .info .phone p.callnum {font-size: 24px; letter-spacing: -1px;}
+#section4 .info .time {width: auto;}
+#section4 .info .time table {margin: 15px 10px; word-break: keep-all;}
+#section4 .info .time table tr td {text-indent: 0; padding-left: 10px;}
+
+#section4 .health h2 {margin:40px 20px 30px 20px; text-align: center; padding: 20px 0;}
+#section4 .health h2 span {display: block; width: 100%; margin: 0; font-size: 16px;;}
+
+
+#section4 .health .video_wrap {width: 100%; overflow-x: auto;}
+#section4 .health .video_box {width: 800px;}
+#section4 .health .video_box ul {width: 250px; height: auto; margin-right: 10px; float: left; }
+#section4 .health .video_box ul li.movie {width: 100%; height: auto; }
+#section4 .health .video_box ul li.movie img {width: 100%;}
+
+
+
+
+#section5 {height: auto;}
+#section5 .pop {display: none;;}
+
+
+
+
+
+/*subpage*/
+#visual_sub .text_box span {font-size: 36px;}
+#visual_sub .text_box span:nth-child(1) {transform: translateX(-50%); top:-50px}
+#visual_sub .text_box span:nth-child(2) {transform: translateX(-50%)}
+#visual_sub .text_box span:nth-child(3) {top:50px; transform: translateX(-50%);}
+
+
+
+.snb_box {display: none;}
+.contents_box h3 {width: 80%;}
+.greeting .ceo {width: 100%; height: auto; text-align: center; margin-bottom: 50px;}
+.greeting .ceo img {width:70%;}
+
+.greeting .article {width: 100%;}
+.greeting .article em {width: 100%; text-align: center; display: block;}
+.greeting .article em img {left: 50%; margin-left: -160px;}
+
+
+
+
+#floating_menu {display: none;}

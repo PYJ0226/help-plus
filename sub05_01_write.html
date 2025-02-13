@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재활요양병원</title>
+    <link rel="stylesheet" href="css/style.css?v=0.1">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    <div class="sidebox">
+        <div class="sidemenu">
+            <span class="btn_close"></span>
+
+
+            <div class="gnb2">
+            </div>
+
+
+            <div class="member_box">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div id="header">
+        <h1><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+
+        <div class="hambuger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="phone mo">
+            <a href="tel:01033217317"><i class="fas fa-phone"></i></a>
+        </div>
+        
+
+        <ul class="gnb">
+            <li><a href="sub01_01.html">병원소개</a>
+                <ul class="lnb lnb1">
+                    <li><a href="sub01_01.html">병원소개</a></li>
+                    <li><a href="#">의료진소개</a></li>
+                    <li><a href="#">병원둘러보기</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">이용안내</a>
+                <ul class="lnb lnb2">
+                    <li><a href="#">진료안내</a></li>
+                    <li><a href="#">입퇴원안내</a></li>
+                    <li><a href="#">입원시준비사항</a></li>
+                    <li><a href="#">층별안내</a></li>
+                    <li><a href="#">비급여안내</a></li>
+                </ul>
+            </li>
+            <li><a href="#">재활센터</a>
+                <ul class="lnb lnb3">
+                    <li><a href="#">재활센터</a></li>
+                </ul>
+            </li>
+            <li><a href="#">클리닉센터</a>
+                <ul class="lnb lnb4">
+                    <li><a href="#">치매</a></li>
+                    <li><a href="#">뇌졸증</a></li>
+                    <li><a href="#">만성질환</a></li>
+                    <li><a href="#">퇴행성질환</a></li>
+                    <li><a href="#">통증</a></li>
+                    <li><a href="#">한의약</a></li>
+                </ul>
+            </li>
+            <li><a href="#">온라인문의</a>
+                <ul class="lnb lnb5">
+                    <li><a href="#">온라인문의</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <div class="lnb_bg"></div>
+    </div>
+
+
+    <div id="visual_sub">
+        <div class="building"></div>
+
+        <div class="text_box">
+            <strong>
+                <span><em>BEST AHN</em></span>
+                <span>REHABILITATION</span>
+                <span>HOSPITAL</span>
+            </strong>
+            <hr>
+        </div>
+    </div>
+
+
+    <div id="section_sub">
+        <div class="snb_box">
+            <ul class="snb">
+                <li><a href="sub05_01.html">온라인문의</a></li>
+                <li><a href="sub05_02.html">자주묻는질문</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="contents_box board_page">
+            <h3>온라인문의<span>무엇이든 물어보세요</span></h3>
+            
+
+
+            <!-- 쓰기 -->
+            <ul class="board_write">
+                <li>
+                    <label for="radio1">구분</label>
+                    <span>
+                        <label for="radio1"><input type="radio" name="division" id="radio1">공지사항</label>
+                        <label for="radio2"><input type="radio" name="division" id="radio2">업데이트</label>
+                    </span>
+                </li>
+                <li>
+                    <label for="title">제목</label>
+                    <span>
+                        <input type="text" id="title">
+                    </span>
+                </li>
+                <li>
+                    <label for="name">작성자</label>
+                    <span>
+                        <input type="text" id="name">
+                    </span>
+                </li>
+                <li class="article_li">
+                    <label for="article">내용</label>
+                    <span>
+                        <textarea name="article" id="article"></textarea>
+                    </span>
+                </li>
+                <li>
+                    <label for="file">파일첨부</label>
+                    <span>
+                        <input type="file" id="file">  <!-- diplay:none -->
+                        <em>파일을 선택해주세요</em>
+                        <label for="file" class="file">파일선택</label>
+                    </span>
+                </li>
+            </ul>
+            
+            <div class="btn_area">
+                <a href="#" class="list">목록</a>
+                <a href="#" class="write">확인</a>
+            </div>
+            <!-- //쓰기 -->
+
+            
+        </div>
+
+
+    </div>
+
+
+    <div id="footer"></div>
+    
+
+
+
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/motion.js"></script>
+
+    <script>
+        $('.pop').draggable({
+            scroll : false,
+		    containment : 'parent'
+        });
+        $('.pop').mousedown(function(){
+            $(this).stop().animate({opacity:0.5},100);
+        })
+        .mouseup(function(){
+            $(this).stop().animate({opacity:1},200);
+        })
+    </script>
+</body>
+</html>

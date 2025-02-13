@@ -1,0 +1,494 @@
+
+
+/*layouts*/     
+.mo {display: none;}             
+
+#header {width: 100%; min-width: 1200px; height: 111px; background: rgba(0,27,59,0.1); position: absolute; top:0; z-index: 3; border-bottom: 2px solid #876333; transition: .5s;}
+#header:hover {background: rgba(0,27,59,0.5);}
+#visual_main {width: 100%; min-width: 1200px; height: 100vh; background: url('../images/visual_bg.jpg') center top no-repeat; overflow: hidden; position: relative; background-size: cover;}
+#section_box {position: relative; z-index: 1;}
+#section1 {width: 100%; min-width: 1200px; height: 173px; }        
+#section2 {width: 100%; min-width: 1200px; height: 658px; background: #f2f2f2;}
+#section3 {width: 100%; min-width: 1200px; height: 478px; background: url('../images/bg_section3.jpg') center no-repeat}
+#section4 {width: 100%; min-width: 1200px; height: 470px; background: #f9f9f9;padding-top: 80px; box-sizing: border-box;}
+#section5 {width: 100%; min-width: 1200px; height: 600px; padding-top: 80px; }
+#footer {width: 100%; min-width: 1200px; height: 233px; background: #876333;}
+
+  
+#popup {width: 488px; height: 334px; position: fixed; z-index: 777; left:50%; top:50%; transform: translate(-50%,-50%);}
+#popup button {width: 418px; height: 40px; background:#876333; position: absolute; bottom:-40px; font-size: 15px; color:#fff; text-align: center; line-height: 40px; left:50%; transform: translateX(-50%); border-radius: 0 0 5px 5px; cursor: pointer;}
+#popup button:hover {background: #876333;}
+ 
+
+/*header*/
+#header h1 {width: 355px; height: 111px; float: left; margin-left: 156px;margin-top: 15px}
+#header .gnb {height: 78px; float: right; margin-top: 32px; margin-right: 32px; }
+#header .gnb > li {height: 78px; line-height: 78px; font-size: 20px; font-weight: bold; display: inline-block; position: relative;}
+#header .gnb > li > a {color: #fff; display: block; padding: 0 40px; }
+#header .gnb > li .lnb {position: absolute; width: 100%; z-index: 2; font-weight: normal; display: none;}
+#header .gnb > li .lnb li {font-size: 18px; height: 50px; line-height: 50px; letter-spacing: -1px; text-align: center;}
+#header .lnb_bg {position: absolute; width: 100%; height: 50px; background: rgba(255,255,255,0.97); border-bottom: 4px solid #876333; top:111px; display: none;}
+
+
+
+#header .hambuger {width: 78px; height: 78px; float: right; margin-top: 32px; margin-right: 121px; cursor: pointer; z-index: 10; transition: .3s; position: relative;}
+#header .hambuger span {width: 29px; height: 3px; background: #fff; position: absolute; left: 25px; border-radius: 0 0 100px 0 }
+#header .hambuger span:nth-child(1) {top: 27px;}
+#header .hambuger span:nth-child(2) {width: 22px; top: 37px;}
+#header .hambuger span:nth-child(3) {top: 47px;}
+
+
+#header .bodyColor {position: absolute; top:10px; right:175px; }
+#header .bodyColor li a {position: absolute; width: 30px; height: 30px; border-radius: 50%; background: #000;box-sizing: border-box; text-align: center; padding-top: 4px; box-sizing: border-box;}
+#header .bodyColor li a img {width: 70%;}
+#header .bodyColor li a.btn_sun {display: none; }
+
+
+
+
+
+/*visual_main*/
+#visual_main .building {width: 100%; height: 100%; background: url('../images/visual_building.png') center bottom -300px no-repeat; position: absolute; }
+#visual_main .text_box {position: absolute; top: 200px; left:50%; transform: translateX(-50%); text-align: center;}
+#visual_main .text_box strong {font-size: 90px; color: #817b7b; font-weight:bold; line-height:100px;}
+#visual_main .text_box strong span {display: block;opacity: 0;}
+#visual_main .text_box strong span:nth-child(1) {animation: text_ani1 1s forwards;}
+@keyframes text_ani1 {
+    0% {margin-left: 300px; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+#visual_main .text_box strong span:nth-child(2) {animation: text_ani2 1s forwards; animation-delay: .3s;}
+@keyframes text_ani2 {
+    0% {margin-right: 300px; opacity: 0;}
+    100% {margin-right: 0px; opacity: 1;}
+}
+#visual_main .text_box strong span:nth-child(3) {animation: text_ani1 1s forwards; animation-delay: .6s;}
+
+#visual_main .text_box strong span em {color: #876333; font-style: normal;font-weight:bold}
+
+
+#visual_main .text_box hr {width: 200px; height: 5px; background:  #876333; margin: 30px auto;animation: bar 1s forwards; animation-delay: .9s; opacity: 0;}
+@keyframes bar {
+    0% {width: 0;opacity: 0;}
+    100% {width: 200px;opacity: 1;}
+}
+
+#visual_main .text_box p {font-size: 40px; color: #fff; animation: up 2s forwards; animation-delay: 1.2s; opacity: 0;}
+@keyframes up {
+    0% {margin-top: 100px; opacity: 0;}
+    100% {margin-top: 0px; opacity: 1;}
+}
+
+
+/*section1*/
+#section1 > div {width: 1200px; height: 200px; background: #fff; margin: 0 auto; text-align: center; box-shadow: 0 2px 20px rgba(0,0,0,0.1); position: relative; z-index: 3; padding-top: 15px; box-sizing: border-box;}
+
+#section1 > div > a {display: inline-block; margin: 0 3px;}
+#section1 > div > a > ul {width: 270px; height: 170px; background: #f5f5f5; position: relative; transition: .5s;}
+#section1 > div > a:hover > ul {background: #f8eee7;}
+#section1 > div > a > ul li.bul {position: absolute; width: 13px; height: 13px; left: 5px; top:5px; background: #876333;}
+#section1 > div > a > ul li.icon {width: 100%; height: 51px; margin: 21px auto 16px auto; float: left; }
+#section1 > div > a > ul li.title {width: 100%; height: 34px; font-size: 18px; font-weight: bold; clear: both;}
+#section1 > div > a > ul li.exp {width: 100%; height: 34px; font-size: 14px}
+
+
+
+/*section2*/
+#section2 > div {width: 1200px; margin: 0 auto; padding-top: 40px; box-sizing: border-box;}
+#section2 > div h2 {width: 100%; height: 100px; font-size: 36px; text-align: center; line-height: 70px;}
+#section2 > div h2 span {display: block; font-size: 18px; color: #876333; font-weight:bold; line-height: 20px;}
+
+#section2 .content ul {width: 288px; height: 307px; box-shadow: 0 2px 20px rgba(0,0,0,0.07); background: #fff; position: relative; float: left; margin-right: 15px;}
+#section2 .content ul:last-child {margin-right: 0;}
+
+#section2 .content ul li.icon {position: absolute; width: 52px; height: 23px; line-height: 23px; background: #876333; color:#fff; text-align: center; left: 20px; top: 39px; font-size: 13px}
+#section2 .content ul li.tit {width: 248px; height: 30px; font-size: 18px; font-weight: bold; margin-top: 69px; float: left; margin-left: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#section2 .content ul li.tit a {color: #444;}
+#section2 .content ul li.exp {width: 248px; float: left; margin-left: 20px; font-size: 14px; line-height: 25px}
+#section2 .content ul li.exp a {color:#777; }
+#section2 .content ul li.day {position: absolute; right: 20px; bottom: 15px; font-size: 14px; color:#777;}
+
+
+#section2 .square {position: absolute; background: #000; transition: .2s ; }
+
+#section2 .sq1 {width: 0%; height: 1px; left:0; top:0; transition-delay: .6s}
+#section2 .sq2 {width: 1px; height: 0%; right:0; top:0; transition-delay: .4s}
+#section2 .sq3 {width: 0%; height: 1px; right:0; bottom:0; transition-delay: .2s}
+#section2 .sq4 {width: 1px; height: 0%; left:0; bottom:0; transition-delay: 0s }
+
+#section2 ul:hover .sq1 {width: 100%; transition-delay: 0s}
+#section2 ul:hover .sq2 {height: 100%; transition-delay: .2s}
+#section2 ul:hover .sq3 {width: 100%; transition-delay: .4s}
+#section2 ul:hover .sq4 {height: 100%; transition-delay: .6s}
+
+/* #section2 ul:hover .sq1 {animation:sq1 0.2s forwards;}
+#section2 ul:hover .sq2 {animation:sq2 0.2s forwards;animation-delay: .2s}
+#section2 ul:hover .sq3 {animation:sq3 0.2s forwards;animation-delay: .4s}
+#section2 ul:hover .sq4 {animation:sq4 0.2s forwards;animation-delay: .6s}
+@keyframes sq1 {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@keyframes sq2 {
+    0% {height: 0;}
+    100% {height: 100%;}
+}
+@keyframes sq3 {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@keyframes sq4 {
+    0% {height: 0;}
+    100% {height: 100%;}
+} */
+
+
+
+/*section3*/
+#section3 > div {width: 1200px; height: 100%; margin: 0 auto; position: relative;}
+#section3 > div h1 {width: 264px; height: 102px; position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%);}
+
+#section3 > div a {position: absolute; width: 288px; height: 122px; background: #fff; }
+#section3 > div a li.icon {width: 51px; height: 51px; float: left; margin: 33px 0 0 16px; }
+#section3 > div a li.tit {width: 200px; height: 30px; float: left; margin: 20px 0 0 15px; font-size: 18px; font-weight: bold}
+#section3 > div a li.exp {width: 200px; height: 50px; float: left; margin: 0px 0 0 15px; font-size: 14px;}
+
+#section3 > div a:nth-of-type(1) {top: 52px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(2) {top: 182px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(3) {top: 312px; left: 0; opacity: 0;}
+#section3 > div a:nth-of-type(4) {top: 52px; right: 0; opacity: 0;}
+#section3 > div a:nth-of-type(5) {top: 182px; right: 0; opacity: 0;}
+#section3 > div a:nth-of-type(6) {top: 312px; right: 0; opacity: 0;}
+
+#section3.action a:nth-of-type(1) {animation: sec3_1 1s forwards;}
+#section3.action a:nth-of-type(2) {animation: sec3_2 1s forwards; animation-delay: 0.1s;}
+#section3.action a:nth-of-type(3) {animation: sec3_3 1s forwards; animation-delay: 0.2s;}
+#section3.action a:nth-of-type(4) {animation: sec3_4 1s forwards; animation-delay: 0.5s;}
+#section3.action a:nth-of-type(5) {animation: sec3_5 1s forwards; animation-delay: 0.4s;}
+#section3.action a:nth-of-type(6) {animation: sec3_6 1s forwards; animation-delay: 0.3s;}
+
+
+@keyframes sec3_1 {
+    0% {left:400px; top:182px; opacity: 0;}
+    100% {left:0px; top:52px; opacity: 1;}
+}
+@keyframes sec3_2 {
+    0% {left: 400px; top: 182px; opacity: 0}
+    100% {left: 0; top: 182px; opacity: 1}
+}
+@keyframes sec3_3 {
+    0% {left: 400px; top: 182px; opacity: 0}
+    100% {left: 0; top: 312px; opacity: 1}
+}
+@keyframes sec3_4 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 52px; opacity: 1}
+}
+@keyframes sec3_5 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 182px; opacity: 1}
+}
+@keyframes sec3_6 {
+    0% {right: 400px; top: 182px; opacity: 0}
+    100% {right: 0; top: 312px; opacity: 1}
+}
+
+
+
+
+/*section4*/
+#section4 > div {width: 1200px; height: 307px; margin:0 auto; }
+#section4 > div .info {width: 288px; height: 307px; float: left; background: #876333; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+#section4 > div .health {width: 898px; height: 307px; float: right; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.2)}
+
+
+#section4 .info .phone {width: 288px; height: 154px; text-align: center}
+#section4 .info .phone img {margin: 15px 0}
+#section4 .info .phone h3 {font-size: 18px; color: #fff; height: 20px;}
+#section4 .info .phone p.callnum {height: 42px; line-height: 42px; font-size: 30px; color:#fff}
+#section4 .info .phone a{color: #fff;}
+
+#section4 .info .time {width: 288px; height: 153px; background:#d2aa72;}
+#section4 .info .time table { margin: 28px 0 0 28px; float: left; color: #fff; font-size: 15px}
+#section4 .info .time table tr {}
+#section4 .info .time table tr th {width: 63px; height: 26px; background: #876333; }
+#section4 .info .time table tr td {text-indent: 10px}
+#section4 .info .time table tr:nth-child(2n) td {height: 9px; }
+
+#section4 .health h2 {height: 20px; line-height: 20px; margin-left: 22px; font-size: 20px; margin-bottom: 54px; margin-top: 22px;}
+#section4 .health h2 span {color:#876333; font-weight: bold; margin-left: 20px;}
+#section4 .health .video_box {width: 860px; height: 180px; margin-left: 20px; }
+#section4 .health .video_box ul {width: 257px; height: 180px; float: left; margin-right: 43px; }
+#section4 .health .video_box ul:last-child {margin-right: 0;}
+#section4 .health .video_box ul li.movie {width: 257px; height: 138px; position: relative;}
+#section4 .health .video_box ul li.movie button.play {width: 48px; height: 48px; position: absolute; background: rgba(255,255,255,0.5); left: 50%; top: 50%; transform: translate(-50%,-50%); color: #333; font-size: 16px; border-radius: 50%; transition: .2s; cursor: pointer}
+#section4 .health .video_box ul li.movie button.play:hover {background: rgba(0,0,0,0.9); color: #fff; transform:translate(-50%,-50%) scale(1.3)}
+#section4 .health .video_box ul li.tit {height: 40px; line-height: 40px;}
+
+
+
+
+/*section5*/
+#section5 > h2 {width: 100%; height: 100px; text-align: center; font-size: 36px; line-height: 70px; margin-bottom: 70px;}
+#section5 > h2 span {font-size: 18px; color:  #876333; line-height: 23px; font-weight:bold; display: block;}
+#section5 .map_box {position: relative;}
+#section5 .pop {width: 256px; height: 245px; position: absolute; left: 60%; top:150px; z-index: 2; cursor: move;}
+
+
+
+
+.sidebox {perspective: 1000px; width: 100%; height: 100vh; overflow: hidden; position: fixed; top:0; z-index: -1;}
+.sidemenu {width: 100%; height: 100vh; position: fixed; top:0; right:-100%; background: rgba(38,57,79,0.97); transform: rotateY(-180deg); transform-origin: right; transition: .5s cubic-bezier(.04,.53,.25,.95); }
+.sidemenu.action {transform: rotateY(0deg); right: 0}
+
+.sidemenu .btn_close {position: absolute; left: 50%; top: 100px; width: 80px; height: 80px; cursor: pointer; transform: translateX(-50%)}
+.sidemenu .btn_close:before,
+.sidemenu .btn_close:after {content: ""; position: absolute; width: 100%; height: 3px; background: #fff; top: 40px }
+.sidemenu .btn_close:before {transform: rotate(45deg); transition:.5s cubic-bezier(1,.27,.15,1.66)}
+.sidemenu .btn_close:after {transform: rotate(-45deg); transition:.5s cubic-bezier(1,.27,.15,1.66)};
+
+
+.sidemenu .btn_close:hover:before,
+.sidemenu .btn_close:hover:after {box-shadow: 
+    0 0 5px #876333,
+    0 0 10px #e9c699, 
+    0 0 20px #e9c699, 
+    0 0 20px #e9c699, 
+    0 0 30px #e9c699; }
+.sidemenu .btn_close:hover:before {transform: rotate(225deg)}
+.sidemenu .btn_close:hover:after {transform: rotate(-225deg)}
+
+
+.gnb2 {width: 60%; min-width: 800px; text-align: center; position: relative; height: 600px; left: 50%; transform: translate(-50%,0); top:200px}
+.hidden_menu > li {font-size: 26px; display: inline-block; vertical-align: top; width: 18%; height: 78px; line-height: 78px; position: relative;}
+.hidden_menu > li > a {color: #ffcea9;}
+
+.hidden_menu > li .lnb2 {position: absolute; width: 100%; }
+.hidden_menu > li .lnb2 li {font-size: 18px; height: 70px; line-height: 70px; letter-spacing: -1px;}
+.hidden_menu > li .lnb2 li a {color:#f0f0f0}
+
+
+.member_box {position: absolute; top: 750px; left:50%; transform: translate(-50%,0); width: 100%; text-align: center;}
+.member_box a {display: inline-block; width: 200px; height: 60px; text-align: center; line-height: 60px; color: #222; background: rgba(255,255,255,0.8); transition: .2s}
+.member_box a:hover {background: rgba(255,255,255,1);}
+
+
+
+
+#floating_menu {position: absolute; z-index: 7; width: 90px; right:50px; top:200px; background:var(--mainColor); border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;}
+#floating_menu li {width: 80%; height: 50px; line-height: 50px; background: var(--mainColor2); text-align: center; border-radius: 5px; margin: 10px auto; transition: 0.3s; }
+#floating_menu li a {display: block; color:var(--textColor)}
+#floating_menu li:hover {background: var(--gray1); }
+#floating_menu li:hover a {color: var(--hoverColor2);}
+
+#floating_menu a.go_top {display: block; text-align: center; height: 40px; line-height: 40px; background: var(--mainColor); color: #fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*subpage*/
+#visual_sub {width: 100%; min-width: 1200px; height: 356px; background: url('../images/visual_bg.jpg') center top -300px no-repeat; position: relative; overflow: hidden;}
+#visual_sub .building {width: 100%; height: 100%; background: url('../images/visual_building.png') center top no-repeat; position: absolute; top:130px}
+#visual_sub .text_box {position: absolute; left: 50%; top:180px; transform: translate(-50%,0); text-align: center; width: 1000px;}
+#visual_sub .text_box span {font-size: 50px; color: #fff; font-weight: bold; line-height: 60px; position: absolute; opacity: 0;
+    text-shadow:0 0 50px rgba(0,0,0,0.3),
+                0 0 4px rgba(0,0,0,0.1)}
+#visual_sub .text_box span em {color:#ffdec5; font-style: normal;}
+#visual_sub .text_box span:nth-child(1) {animation: text_sub1 1s forwards; left: 100%; transform: translateX(-130%); width: 250px;}
+#visual_sub .text_box span:nth-child(2) {animation: text_sub2 1s forwards; left: -100%; animation-delay: .3s; transform: translateX(-10%)}
+#visual_sub .text_box span:nth-child(3) {animation: text_sub3 1s forwards; left: 100%; top:50px; animation-delay: .6s; transform: translateX(-50%);}
+@keyframes text_sub1 {
+    0% {left: 100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+@keyframes text_sub2 {
+    0% {left: -100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+@keyframes text_sub3 {
+    0% {left: 100%; opacity: 0;}
+    100% {left:50%; opacity: 1;}
+}
+
+
+#visual_sub .text_box hr {width: 200px; height: 5px; background: #ffdec5; animation: subbar 1s forwards; animation-delay: .9s; opacity: 0; position: absolute; top:110px; border: 0; transform: translateX(-50%);}
+@keyframes subbar {
+    0% {width: 0;opacity: 0; left: 100%; ;}
+    100% {width: 200px;opacity: 1; left: 50%;  }
+}
+
+
+.snb_box {width: 820px; height: 50px; border-radius: 10px; background: #395f89; margin: 0 auto; position: relative; top:-25px; box-shadow: 0 0 24px rgba(0,0,0,0.07);}
+.snb_box ul {text-align: center; font-size: 0;}
+.snb_box ul li {display: inline-block; font-size: 20px; height: 50px; line-height: 50px;}
+.snb_box ul li a {color: #fff; display: block; padding: 0 25px;}
+.snb_box ul li:hover a,
+.snb_box ul li.on a {color:#fedec5}
+
+
+.contents_box {width: 1200px; margin: 0 auto; padding-bottom: 100px;}
+.contents_box:after {content: ""; display: block; clear: both;;}
+.contents_box h3 {width: 640px; height: 100px; font-size: 36px; line-height: 60px; text-align: center; border-bottom: 1px solid #8fc43d; margin: 50px auto 70px auto; font-weight: normal;}
+.contents_box h3 span {display: block; font-size: 18px; color: #777; line-height: 20px;}
+
+
+
+
+
+
+/*인사말*/
+.greeting .ceo {width: 385px; height: 425px; float: left; margin-left: 50px;}
+.greeting .article {width: 680px; height: auto; float: left; margin-left: 34px;}
+
+.greeting .article em {font-size: 36px; color: #289669; font-style: normal; position: relative; }
+.greeting .article em img {position: absolute; left: -30px;}
+.greeting .article em span {color: #f2ac8d;}
+.greeting .article p {font-size: 18px; margin-top: 40px; line-height: 30px;}
+
+
+
+
+
+/*온라인문의*/
+
+
+/*게시판목록*/
+.board_box {}
+.board_box .title_line {width: 100%; height: 60px; background: #8fc43d; line-height: 60px; color: #fff; text-align: center; font-weight: bold; font-size: 17px}
+.board_box .title_line li {width: 180px; float: left;}
+.board_box .title_line li.tit {width: 840px;}
+
+.board_box .board_list li {width: 100%; height: 60px; line-height: 60px; color:#2a2a2a; text-align: center; border-bottom: 1px solid #e6e6e6;}
+.board_box .board_list li em {float: left; width: 180px; font-style: normal; }
+.board_box .board_list li h5 {float: left; width: 840px; font-size: 16px; font-weight: normal; text-align: left; }
+.board_box .board_list li h5 a {position: relative;}
+.board_box .board_list li h5 a:before {content: ""; width: 1px; height: 1px; background: #333; position: absolute; left: 0; bottom: 0;  transition: .3s}
+.board_box .board_list li h5 a:hover:before {width: 100%;}
+.board_box .board_list li span {float: left; width: 180px;}
+
+
+.page_navi {text-align: center; margin-top: 30px;}
+
+.page_navi .btn_prev {display: inline-block; vertical-align: top; width: 35px; height: 35px; text-align: center; line-height: 35px; font-size: 20px; border: 1px solid #eee}
+
+.page_navi ul {display: inline-block; vertical-align: top; }
+.page_navi ul li {float: left; font-size: 20px; width: 35px; height: 35px; text-align: center; line-height: 35px; }
+.page_navi ul li a {display: block}
+.page_navi ul li.active a,
+.page_navi ul li:hover a {background: #8fc43d; color: #fff;}
+
+
+.page_navi .btn_next {display: inline-block; vertical-align: top; width: 35px; height: 35px; text-align: center; line-height: 35px; font-size: 20px; border: 1px solid #eee}
+
+.board_search {width: 540px; height: 50px; margin:50px auto 0 auto}
+.board_search select {width: 170px; height: 50px; line-height: 50px; border: 1px solid #e6e6e6; float: left; text-indent: 20px}
+.board_search input {width: 290px; height: 50px; line-height: 50px; float: left; border: 1px solid #e6e6e6; border-right: 0; margin-left: 10px; box-sizing: border-box; text-indent: 20px; font-size: 15px}
+.board_search button {width: 50px; height: 50px; line-height: 50px; float: left; border: 1px solid #e6e6e6; border-left: 0; background: #fff; cursor: pointer; font-size: 20px; color: #999;}
+.board_search button:hover {color: #222;}
+
+
+.selectbox {width: 170px; float: left; text-indent: 20px; position: relative; font-size: 15px }
+.selectbox i {position: absolute; right: 10px; top: 20px}
+.selectbox .select {width: 170px; height: 50px; line-height: 50px; background: #fff; border: 1px solid #e6e6e6; cursor: pointer;}
+.selectbox ul { position: absolute; width: 172px; bottom: 50px; padding-bottom: 6px; box-shadow: 0 0 30px rgba(0,0,0,0.1)}
+.selectbox ul li {background: #fff; border: 1px solid #e6e6e6; cursor: pointer; margin-bottom: -1px; height: 50px; line-height: 50px}
+.selectbox ul li:hover {background: #f9f9f9;}
+
+
+
+
+/*게시판보기*/
+.board_box_view .title_line {height: 130px; background: #8fc43d;}
+.board_box_view .title_line li {width: 100px; height: 40px; line-height: 40px; color: #fff; float: left; font-size: 17px; font-weight: bold; margin-top: 40px;}
+.board_box_view .title_line li.tit {width: 70px; color: #c6ff00; margin-left: 20px;}
+.board_box_view .title_line li.subject {width: 540px;}
+
+.board_box_view .file {float: right; height: 40px; line-height: 40px; font-weight: bold; margin-right: 27px;}
+.board_box_view .file span {color: #8fc43d;}
+.board_box_view .file a:hover {text-decoration: underline}
+
+.board_box_view .board_view {float: left; padding: 40px 60px; border-bottom: 1px solid #e6e6e6; color: #777; line-height: 30px;}
+
+.btn_area {clear: both; padding-top: 25px; text-align: center}
+.btn_area a {width: 110px; height: 50px; display: inline-block; text-align: center; line-height: 50px; color: #fff; font-weight: bold;;}
+.btn_area a.list {background: #ddad87;}
+.btn_area a.edit {background: #289669;}
+.btn_area a.write {background: #1877a6;}
+
+
+
+
+
+
+/*게시판쓰기*/
+.board_write li {width: 100%; height: 60px; border-bottom: 1px solid #e9e9e9;}
+.board_write li > label {width: 160px; height: 60px; line-height: 60px; background: #8fc43d; float: left; text-align: center; color: #fff; font-weight: bold;}
+.board_write li span label {margin: 20px 0 0 10px; float: left;}
+.board_write li span label input[type=radio] {width: 20px; height: 20px; vertical-align: top; margin-right: 5px;}
+
+.board_write li span input[type=text] {width: 1000px; height: 40px; border: 1px solid #8fc43d; margin: 10px 0 0 10px; text-indent: 8px; font-size: 16px;}
+.board_write li span input[type=text]#name {width: 300px;}
+
+.board_write li.article_li {height:auto; }
+.board_write li.article_li > label {height:324px}
+.board_write li.article_li span {height: 324px; display: block; }
+.board_write li.article_li span textarea {width: 1000px; height: 284px; padding: 8px; border: 1px solid #8fc43d; margin: 10px 0 0 10px; font-size: 16px; font-family: '맑은고딕'}
+.board_write li.article_li span textarea:focus {}
+
+.board_write li input[type=file] {display: none}
+.board_write li em {display: block; min-width: 100px; height: 40px; border: 1px solid #8fc43d; text-indent: 8px; font-size: 16px; float: left; margin: 10px 0 0 10px; line-height: 40px; padding-right: 20px; }
+.board_write li span label.file {width: 100px; height: 42px; line-height: 42px; text-align: center; background: #ccc; float: left; margin: 10px 0 0 0px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1560px) {    
+    #header h1 {margin-left: 30px;}
+    #header .gnb > li > a {padding: 0 20px; }
+    #header .hambuger {margin-right: 30px; }
+}
+
+
+
+@media screen and (max-width:760px) {
+#visual_main .text_box {position: absolute; top: 200px; left:50%; transform: translateX(-50%); text-align: center;}
+#visual_main .text_box strong {font-size: 90px; color: #817b7b; font-weight:bold; line-height:100px;}
+#visual_main .text_box strong span {display: block;opacity: 0;}
+#visual_main .text_box strong span:nth-child(1) {animation: text_ani1 1s forwards;}
+#visual_main .text_box hr {width: 200px; height: 5px; background:  #876333; margin: 30px auto;animation: bar 1s forwards; animation-delay: .9s; opacity: 0;}
+#visual_main .text_box p {font-size: 40px; color: #fff; animation: up 2s forwards; animation-delay: 1.2s; opacity: 0;}
+
+
+    
+
+}
+
+
+
+@media screen and (max-width:50px) {
+
+}
+    
+
+

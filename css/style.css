@@ -1,0 +1,41 @@
+@import url(reset.css);
+@import url(font.css);
+
+/*pc*/
+@import url('best_pc.css');
+/*tablet*/
+@import url('best_tablet.css') screen and (max-width:1200px);
+/*mobile*/
+@import url('best_mobile.css') screen and (max-width:768px);
+
+
+body {font-family:'MaruBuri'; background: #f9f9f9;}
+
+body.sun {
+    --mainColor:#876333;                
+    --mainColor2:#734b17;
+    --hoverColor:#734b17;
+    --hoverColor2:#fff;
+    --textColor:#fff;
+    --gray1:#111
+}
+body.sun #floating_menu {border-radius: 40px; transform: skew(0deg);}
+body.sun #floating_menu li {border-radius: 40px;}
+
+
+
+/* body.moon {
+    --mainColor:#222;
+    --mainColor2:#f0f0f0;
+    --hoverColor:#FFCEA9;
+    --hoverColor2:#fff;
+    --textColor:#111;
+    --gray1:#b30024
+}
+body.moon #floating_menu {border-radius: 0px; transform: skew(-10deg);}
+body.moon #floating_menu li {border-radius: 0px;}
+
+::selection {
+    background-color: #98001e;
+    color: #fff;
+} */
